@@ -22,6 +22,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
+    // Hide status bar
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     
     // Banyak baris
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
